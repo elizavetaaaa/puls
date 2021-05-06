@@ -1,0 +1,28 @@
+.slider{
+  padding: 108px 0 98px;
+  .owl-carousel .owl-item img{
+    width: 750px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .owl-nav .owl-prev{
+    background-image: url("../images/slider/chevron-left-solid.svg") ;
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+
+  }
+  .owl-nav .owl-next{
+    background-image: url("../images/slider/chevron-right-solid.svg");
+    height: 50px;
+    width: 31px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+  }
+}

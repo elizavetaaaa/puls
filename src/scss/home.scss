@@ -1,0 +1,78 @@
+.home {
+  height: 650px;
+  width: 100%;
+  background: url("../images/home/home.png") top left/100% 100% no-repeat;
+  padding: 100px 0 100px;
+  &__info{
+    width: calc(100% - 84px);
+    margin: 55px auto 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    //background-color: green;
+
+
+
+  }
+  &__title{
+    font-family: AdobeInvisFont,MyriadPro-Regular, sans-serif;
+    font-size: 42px;
+    color: #fff;
+
+  }
+  &__subtitle{
+    @include text($Museo500, 24px, #fff);
+  }
+  &__icons-row{
+    margin-top: 66px;
+    display: flex;
+  }
+  &__icon-div{
+    @include text($Museo500, 20px, #fff);
+    text-align: center;
+    margin-left: 70px;
+    column-gap: 20px;
+  }
+  &__icon-div:first-child{
+    width: 106px;
+    height: 96px;
+    margin-left: 0;
+  }
+  &__icon-div:nth-child(2){
+    width: 75px;
+    height: 96px;
+  }
+  &__icon-div:nth-child(3){
+    width: 103px;
+    height: 96px;
+  }
+  &__icon-text{
+    margin-top: 15px;
+  }
+  &__button{
+    @include text($Museo500, 16px, #fff);
+    width: 300px;
+    height: 51px;
+    background: #C70101;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    cursor: pointer;
+  }
+  &__catalog-p{
+    @include text($Museo500, 16px, #fff);
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 91px;
+  }
+  &__catalog-link{
+    @include text($Museo500, 16px, #fff);
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 91px;
+
+  }
+
+}

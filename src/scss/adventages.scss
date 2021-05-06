@@ -1,0 +1,48 @@
+.adventages{
+  padding: 71px 0 78px;
+  background-color: #f6f6f6;
+
+
+  &__title{
+    @include text($Museo700, 30px, #0D0D0D);
+    text-align: center;
+    margin-bottom: 65px;
+  }
+  &__adv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+  }
+  &__adv-icon{
+    margin-bottom: 38px;
+    width: 70px;
+    height: 70px;
+  }
+
+  &__adv-icon-1{
+    background-image: url("../images/adventages/cup.svg");
+
+  }
+  &__adv-icon-2{
+    background-image: url("../images/adventages/heart.svg");
+  }
+  &__adv-icon-3{
+    background-image: url("../images/adventages/shoe.svg");
+  }
+  &__adv-title{
+    @include text($Museo300, 18px, #0D0D0D);
+    margin-bottom: 26px;
+  }
+  &__adv-subtitle{
+    @include text($Museo300, 14px, #0D0D0D);
+    text-align: center;
+  }
+  &__link{
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,9 @@
+.comments {
+  padding: 0 552px 487px 70px;
+}
+.comments__img {
+  background-image: url("../images/comments/img1.svg");
+  width: 172px;
+  height: 171px;
+  border-radius: 50%;
+}

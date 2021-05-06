@@ -1,0 +1,173 @@
+.catalog{
+  padding-bottom: 93px;
+  &__title{
+    @include text($Museo700, 30px, #0D0D0D);
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__content{
+    display: none;
+    &_active{
+      display: block;
+    }
+  }
+  &__caption{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 60px;
+  }
+  &__item{
+    @include text($Museo500, 18px, #6B6B6B);
+    width: 200px;
+    height: 50px;
+    margin-right: 10px;
+    transform: skew(-15deg);
+    text-align: center;
+    border: 2px solid #D0D0D0;
+    line-height: 50px;
+    cursor: pointer;
+    &:hover{
+      background-color: blue;
+      color: #FFFFFF;
+    }
+
+
+    &_active{
+      background-color: $red ;
+      @include text($Museo300, 18px, #fff);
+      border: none;
+
+  }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__skew-text{
+    transform: skew(15deg);
+    text-align: center;
+  }
+  &__row{
+    width: 100%;
+    margin: 0 auto 19px;
+  }
+  &__card{
+    padding: 18px 0 26px;
+    width: 301px;
+    height: 441px;
+    border: 2px solid #E8E8E8;
+    text-align: center;
+    overflow: hidden;
+  }
+  &__inner{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200%;
+  }
+  &__front{
+    width: 100%;
+    transition: .3s;
+    &_active{
+      transform: translateX(-100%);
+      transition: .3s;
+    }
+
+  }
+  &__back{
+    width: 100%;
+    height: 300px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+    &_active{
+      transform: translateX(-100%);
+      transition: .3s;
+    }
+  }
+  &__front-title{
+    @include text($Museo700, 17px, #0D0D0D);
+    margin: 20px 0 16px;
+  }
+  &__front-subtitle{
+    @include text($Museo300, 14px, #0D0D0D);
+    margin-bottom: 17px;
+  }
+  &__front-more-btn{
+    @include text($Museo300,14px,#C70101);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 18px;
+
+  }
+
+  &__menu{
+    height: 214px;
+    list-style-type: square;
+    text-align: left;
+    margin-bottom: 84px ;
+  }
+  &__span{
+    @include text($Museo300, 14px, #555555);
+  }
+  &__backOff{
+    @include text($Museo300,14px,#C70101);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  &__menu-item{
+    margin-bottom: 22px;
+    color: #C70101;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__buy{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    padding: 10px 22px 0;
+
+  }
+  &__price{
+    text-align: left;
+  }
+  &__old-price{
+    @include text($Museo300,14px, #555555);
+    text-decoration: line-through;
+  }
+
+  &__new-price{
+    @include text($Museo300, 20px, #050505);
+
+  }
+  &__btn{
+    width: 132px;
+    height: 41px;
+    background: #C70101;
+    @include text($Museo500,14px, #FFFFFF);
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+  }
+  &__hr{
+    width:87%;
+    height: 2px;
+    display:inline-block;
+    background-color: #E8E8E8;
+
+  }
+
+}
+
+@keyframes move {
+}

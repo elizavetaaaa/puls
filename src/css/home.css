@@ -1,0 +1,29 @@
+.home {
+  height: 550px;
+  width: 100%;
+  background: url("../images/home/home.png") top left/100% 100% no-repeat;
+  padding: 100px 0 77px;
+}
+.home__info {
+  width: calc(100% - 84px);
+  margin: 90px auto 77px;
+  text-align: right;
+  background-color: green;
+}
+.home__title {
+  font-family: AdobeInvisFont, MyriadPro-Regular, sans-serif;
+  font-size: 42px;
+  color: #fff;
+}
+.home__subtitle {
+  font-family: MuseoSansCyrl-500, AdobeInvisFont, MyriadPro-Regular, sans-serif;
+  font-size: 24px;
+  color: #fff;
+}
+.home__icons-row {
+  width: calc(100% - 500px);
+  background: #C70101;
+  display: flex;
+  float: right;
+  flex-direction: row;
+}
